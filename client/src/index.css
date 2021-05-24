@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Quicksand";
+    /*color: black;*/
+}
+
+/* NavBar */
+.navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    min-width: 500px;
+    justify-content: space-between;
+    margin: 0px 0px 5px 0px;
+    padding: 10px 10px 10px 10px;
+    padding-bottom: min(10px, max(1vw, 5px));
+    /*border-bottom: min(5px, max(0.3vw, 3px)) solid black;*/
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(34,166,254,1) 100%);  
+}
+
+.navbar .name {
+    display: flex;
+    align-items: flex-start;
+    min-width: 250px;
+}
+
+.navbar h1 {
+    font-size: min(max(5.5vw, 30px), 60px);
+    align-self: right;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.navbar img {
+    height: min(max(6vw, 40px), 60px);
+}
+
+.navbar a{
+    font-size: min(max(3vw, 20px), 40px);
+    margin: min(max(0.5vw, 2px), 10px);
+    padding: min(max(0.5vw, 6px), 10px);
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #22a6fe;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    transition-duration: 0.4s;
+}
+
+.signup {
+    width: 400px;
+    align-self: center;
+}
+
+.signup a {
+    text-decoration: none;
+}
+
+.login {
+    width: 400px;
+    align-self: center;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+/* form */
+.form {
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: black;
+    padding: 10px 20px 20px 20px;
+}
+
+.form h2 {
+    font-size: 42px;
+}
+
+.form label {
+    margin-left: 10px;
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+
+.form input {
+    border-radius: 20px;
+    border-width: 2px;
+}
+
+.form button {
+    border-radius: 20px;
+    font-size: 25px;
+    background: #22a6fe;
+    border-color: #22a6fe;
+}
+
+.form button:hover {
+    color: #22a6fe;
+    background: black;
+    border-color: black;
+    box-shadow: 5px 5px #22a6fe;
+    transition-duration: 0.3s;
+}
+
+.extra {
+    font-size: 20px;
+}
+
+/* Home */
+.home {
+    min-height: 400px;
+    width: 800px;
+    flex-direction: column;
+}
+
+.home h1{
+    text-align: center;
+    font-size: min(max(4vw, 30px), 50px);
+}
+
+.home button {
+    border-radius: 20px;
+    font-size: 25px;
+    background: #22a6fe;
+    border-color: #22a6fe;
+}
+
+.home button:hover {
+    color: #22a6fe;
+    background: black;
+    border-color: black;
+    box-shadow: 5px 5px #22a6fe;
+    transition-duration: 0.3s;
+}
+
+/* DashBoard */
+.dashboard .tabtoggle {
+    display: flex;
+    margin-left: 20px;
+}
+
+.tabtoggle h1 {
+    margin: 10px;
+    font-size: min(max(3vw, 20px), 40px);
+    align-content: center;
+    color: #22a6fe;
+    user-select: none;
+}
+
+.tabtoggle .tag:hover {
+    color: #a1d4ff;
+    cursor: pointer;
+}
+
+/* NewsTab */
+.newsCard {
+    min-width: 350px;
+    padding: 15px 15px 15px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border-width: 4px;
+}
+
+
+.newsCardImage {
+    object-position: center;
+    height: 120px;
+}
+
+.card-img-top {
+    border-radius: 20px;
+}
+
+.newsTab {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.newsContainer {
+    margin-left: 0px;
+    font-size: 20px;
+}
+
+.newsList {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto
+}
+
+.newsCard .card-body {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.newsCard button {
+    background-color: #dfdfdf;
+    border-color: #dfdfdf;
+    border-width: 4px;
+    border-radius: 15px;
+    padding-top: 0px;
+    height: 55px;
+    width: 100px;
+    font-size: 30px;
+    color: #22a6fe; 
+}
+
+.newsCard button:hover {
+    background-color: black;
+    border-color: black;
+    box-shadow: 5px 5px #22a6fe;
+    color: #22a6fe;
+}
+
+.newsHeading {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.newsHeading h1{
+    margin-bottom: 0px;
+    margin-right: 10px;
+    font-size: 43px;
+}
+
+.refreshIcon{
+    width: 32px;
+    height: 32px;
+}
+
+.newsHeading Button{
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 12px;
+    padding: 0px;
+    height: 50px;
+    width: 50px;
+}
+
+.newsHeading Button:hover {
+    background-color: #22a6fe;
+    border-color: #22a6fe;
+    box-shadow: 5px 5px black;
+    transition-duration: 0.3s;
+}
+
+.newsForm {
+    margin-left: 30px;
+}
+
+.newsForm form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.newsForm .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.newsForm label {
+    font-size: 30px;
+    margin: 10px 10px 0px 0px;
+}
+
+.newsForm input {
+    margin: 10px 0px 0px 10px;
+    font-size: 25px;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    border-width: 4px
+}
+
+.newsForm button {
+    margin: 10px 0px 0px 10px;
+    background-color: #22a6fe;
+    font-size: 27px;
+    height: 50px;
+    min-width: 150px;
+    max-width: 150px;
+    border-radius: 20px;
+    border-width: 0px;
+}
+
+.newsForm button:hover {
+    background-color: black;
+    box-shadow: 5px 5px #22a6fe;
+    color: #22a6fe;
+}
+
+.newsKeyWordList {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.newsKeyWord {
+    display: flex;
+    align-items: center;
+    background-color: #eb5468;
+    margin-left: 10px;
+    padding: 5px 12px 5px 10px;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.newsKeyWordHeading {
+    color: white;
+    margin: 4px 5px 5px 5px;
+}
+
+/* Stock Tab */
+
+.stockForm {
+    display: flex;
+}
+
+.stockForm .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.stockForm label {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.stockForm input {
+    min-width: 200px;
+    max-width: 200px;
+    margin-right: 70px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 0px 10px 0px 10px;
+    font-size: 25px;
+}
+
+.stockForm select {
+    min-width: 200px;
+    max-width: 200px;
+    height: 50px;
+    margin-right: 40px;
+}
+
+.stockForm button {
+    max-width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 0px;
+    border-color: transparent;
+    background-color: #22a6fe;
+}
+
+.stockForm button:hover {
+    background-color: black;
+    color: #22a6fe;
+    box-shadow: 5px 5px #22a6fe;
+}
